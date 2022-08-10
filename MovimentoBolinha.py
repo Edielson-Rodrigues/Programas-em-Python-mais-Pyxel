@@ -2,7 +2,7 @@ import pyxel
 
 class Bolinha:
     def __init__(self):
-        pyxel.init(150, 100, title='Bolinha Movimento')
+        pyxel.init(150, 100, title='Bolinha Movimento', fps=60)
         self.condicaoX = True
         self.condicaoY = True
         self.posicao = [0, 0]
@@ -33,7 +33,7 @@ class Bolinha:
             
 
     def draw(self):
-        pyxel.cls(2)
+        pyxel.cls(10)
         pyxel.circ(self.posicao[0] + self.raio+1, self.posicao[1] + self.raio+1, self.raio, 1)
 
 
